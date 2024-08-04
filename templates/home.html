@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Community Health Portal</title>
+          {% include 'bootstrap.html' %}
+    <style>
+       .image-wrapper{
+         display: flex;
+         justify-content: space-around;
+       }
+
+       .image-wrapper2{
+         display: flex;
+         justify-content: space-around;
+       }
+
+       .image-container{
+          display: inline-block;
+          text-align: center;
+          margin: 10px;
+       }
+    </style>
+    
+  </head>
+  <body>
+    <div class="p-3 mb-2 bg-dark text-white">
+    {% include 'navbar.html' %}
+     <h1 class="text-center">Community Health Portal</h1>
+     <p class="text-center">Welcome to the Community Health Portal. This portal is designed to help you keep track of your community's health</p>
+    <hr>
+    <div class="d-flex justify-content-center" class="image-wrapper">
+      <div class="image-container"> <img class="img-fluid" 
+ src="/static/local_health_services.jpg" 
+      alt="Local Health Services" style="height: 400px; width:600px">
+        <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque et itaque fuga quas consequatur? Saepe sit distinctio itaque, dolore earum, atque repellendus molestias ab quidem autem vitae possimus harum ipsum.</p>
+      </div>   
+
+      <div class="image-container">
+        <img  class="img-fluid" src="/static/Emergency_Assistance.jpg" 
+        alt="Emergrncy Assistance" style="height: 400px; width:500px">
+        <p class="text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem modi molestiae laboriosam praesentium pariatur commodi ipsam quia numquam quidem temporibus voluptate reiciendis unde culpa, harum quos facere iusto suscipit! Vel.</p>
+        
+      </div> 
+    </div>
+    <hr>
+    <div  class="d-flex justify-content-center" class="image-wrapper2">
+        <div class="image-container">
+               <img class="img-fluid" src="/static/learn_about_health.jpg" 
+               alt="Learn About Health" style="height: 400px; 
+                width:500px">
+               <p class="text-center">Lorem ipsum dolor, sit amet consectetur 
+       adipisicing elit. Iste eveniet dolore nobis cumque, asperiores 
+ laboriosam deleniti veniam odit adipisci dignissimos corrupti ullam eaque dolores quo voluptates blanditiis reprehenderit reiciendis fugiat.</p>
+        </div>
+        <div class="image-container">
+          <img class="img-fluid" src="/static/Events.jpg" 
+          alt="Events" style="height: 400px; width:500px">
+          <p class="text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia doloremque beatae ea libero nihil placeat corrupti rerum hic accusantium nam, quibusdam eaque distinctio error assumenda? Doloribus blanditiis quibusdam deserunt. Illum!</p>
+        </div>
+    </div>
+      {% include 'footer.html' %}
+</div>   
+  </body>
+</html>
+
